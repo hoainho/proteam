@@ -1,0 +1,86 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.preloading {
+	overflow: hidden;
+}
+.loading{
+	width:	100%;
+	height: 100%;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999999999;
+	display: block;
+	overflow: hidden;
+}
+.loading img {
+	width: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+@-webkit-keyframes {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.loading img {
+  -webkit-animation: rotating 1.5s linear infinite;
+  -moz-animation: rotating 1.5s linear infinite;
+  -ms-animation: rotating 1.5s linear infinite;
+  -o-animation: rotating 1.5s linear infinite;
+  animation: rotating 1.5s linear infinite;
+}
+
+.banner
+{
+   	width: 100%;
+   	height: 450px;
+   	overflow: hidden; // tránh lỗi hình quá lớn đè lên nội dung các phần khác
+   	padding-left: 15px;
+   	box-sizing: border-box; // cố định kích thước của slide
+	background-position: center   	 !important;
+}
+.container-fluid{
+	background-position: center;
+	background-image: url(img/pt.png);
+}
+.navbar	{
+	background-color: black;
+
+}
+.nav-link {
+	color : white;
+	background-color: black;
+}
+.dropdown-menu{
+	background-color: black;
+}
