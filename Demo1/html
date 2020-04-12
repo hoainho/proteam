@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<TITLE> NAM DU WEB </TITLE>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+<body>
+	<header>
+		<div class="main">
+			<ul>Trang chu</ul>
+			<ul>Tin tuc</ul>
+			<ul>Tour</ul>
+			<ul>Lien he</ul>
+		</div> 
+	</header>
+</body>
+</html>
+
