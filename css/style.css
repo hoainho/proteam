@@ -336,7 +336,8 @@ body {
   border-bottom: 1px solid #c89c21;
   font-size: 1.5rem;
   transition: all 0.5s;
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem;
+  cursor: pointer; }
 
 .btn-text:hover {
   color: #fff !important;
@@ -360,7 +361,7 @@ body {
 #phonehidden {
   overflow: hidden; }
 
-.fa-facebook, .fa-instagram, .fa-tools {
+.fa-facebook, .fa-tools {
   font-size: 4em;
   margin: 0.2em;
   color: #fff; }
@@ -511,7 +512,7 @@ hr {
       top: -2rem;
       left: 52%; }
       .group-img--img1:hover {
-        transform: translate(-20px, -8px);
+        transform: scale(1.5);
         border: 3px solid #f3d88d;
         padding: 0.5rem;
         z-index: 11; }
@@ -671,7 +672,7 @@ hr {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -25%);
+        transform: translate(-57%, 20%);
         text-transform: uppercase;
         color: #c89c21;
         opacity: 0;
@@ -695,7 +696,7 @@ hr {
     transform: translate(0.5rem, -1rem); }
   .footer-text {
     position: absolute;
-    left: 34rem;
+    left: 35rem;
     top: 6rem;
     font-size: 1.5rem;
     width: 30%; }
@@ -717,3 +718,60 @@ hr {
         list-style-type: none; }
       .footer-list--link__item:hover .footer-list--link__item___text {
         color: #fff; }
+
+.infomation {
+  height: 100vh;
+  display: flex; }
+  .infomation-per {
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: .6s; }
+    .infomation-per:hover .infomation-per--text {
+      bottom: 3.5rem;
+      opacity: 1; }
+    .infomation-per--pic {
+      position: absolute;
+      height: 105%;
+      left: 50%;
+      transform: translateX(-50%);
+      filter: grayscale(90%);
+      transition: .6s; }
+    .infomation-per--pic:hover {
+      filter: grayscale(0); }
+    .infomation-per--text {
+      position: absolute;
+      bottom: 0.5rem;
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      transition: .6s; }
+      .infomation-per--text__name {
+        color: #fff;
+        font-size: 1.2rem;
+        font-style: bold; }
+      .infomation-per--text__job {
+        color: #c89c21;
+        font-size: 1rem;
+        font-style: italic;
+        margin-top: -0.5rem !important;
+        margin-bottom: 1rem !important; }
+      .infomation-per--text__icon {
+        display: inline-block;
+        height: 2.5rem;
+        width: 2.5rem;
+        border-radius: 50%;
+        line-height: 2.5rem;
+        background-color: #c89c21;
+        color: #fff;
+        margin: 0 0.5rem;
+        font-size: 1rem;
+        transition: .3s linear; }
+      .infomation-per--text__icon:hover {
+        color: #c89c21;
+        background-color: transparent;
+        transform: scale(1.5);
+        border-style: none; }
+  .infomation-per:hover {
+    flex: 1.8; }
